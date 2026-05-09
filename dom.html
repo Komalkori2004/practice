@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 20px 40px;
+            font-size: 18px;
+            cursor: pointer;
+            display: block;
+            margin: 50px auto;
+            background-color: pink;
+            /* cursor: pointer; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn" onclick="ChangeTheme()">Click me</button>
+
+
+
+</body>
+
+<script>
+    function ChangeTheme() {
+        let body = document.body;
+        let btn = document.getElementById("btn")
+
+        if (body.style.backgroundColor === "black") {
+            body.style.backgroundColor = "white";
+            body.style.color = "black";
+            btn.innerHTML = "light mode on"
+        } else {
+            body.style.backgroundColor = "black";
+            body.style.color = "white   ";
+            btn.innerHTML = "dark mode on"
+        }
+
+
+
+    }
+</script>
+
+</html>
